@@ -1,0 +1,12 @@
+SELECT 'Consulta 1';
+select fabricante FROM PRODUCTOS ORDER BY fabricante;
+SELECT 'Consulta 2';
+SELECT fabricante,precio,añoFabricacion FROM PRODUCTOS INNER JOIN BICICLETAS ON id_bici=idbicicleta where añoFabricacion>=2019 ORDER by fabricante;
+SELECT 'Consulta 3';
+SELECT fabricante FROM PRODUCTOS INNER JOIN MOTOCICLETAS on id_moto=idmotocicleta WHERE idprov_motor=1;
+SELECT 'Consulta 4';
+SELECT fabricante FROM PRODUCTOS inner join INTENSION_DE_COMPRA on id_producto=idproducto WHERE id_cliente='lucky' ORDER by fabricante;
+SELECT 'Consulta 5';
+SELECT user, nombrescliente, apellidoscliente FROM CLIENTES inner JOIN INTENSION_DE_COMPRA on id_cliente=user where id_producto=3;
+SELECT 'Consulta 6';
+SELECT COUNT(*) FROM BICICLETAS WHERE añoFabricacion>2019;

@@ -1,0 +1,12 @@
+CREATE TABLE MOTOCICLETAS(idMotocicleta int PRIMARY KEY,
+                          autonomiaMotocicleta int,
+                          idProv_motor INT,
+                          FOREIGN key(idProv_motor) REFERENCES PROVEEDORES(idproveedor));
+                          
+INSERT INTO MOTOCICLETAS VALUES(1,18,1);
+INSERT INTO MOTOCICLETAS VALUES(2,14,2);
+INSERT INTO MOTOCICLETAS VALUES(3,26,1);
+INSERT INTO MOTOCICLETAS VALUES(4,36,3);
+INSERT INTO MOTOCICLETAS VALUES(5,20,4);
+INSERT INTO MOTOCICLETAS VALUES(6,12,5);
+
